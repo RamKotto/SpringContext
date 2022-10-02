@@ -11,9 +11,6 @@ public class ProductService {
     @Autowired
     private Repository repository;
 
-    @Autowired
-    private Cart cart;
-
     public String getTitleById(Long id) {
         return repository.getById(id).getTitle();
     }
