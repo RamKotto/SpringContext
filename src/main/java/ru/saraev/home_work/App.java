@@ -25,5 +25,7 @@ public class App {
         cart2.showCart();
 
         System.out.println(productService.showAllProducts());
+
+        context.close();
     }
 }
