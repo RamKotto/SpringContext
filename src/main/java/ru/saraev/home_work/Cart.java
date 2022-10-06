@@ -14,8 +14,12 @@ public class Cart {
 
     private List<Product> cart;
 
-    @Autowired
     private ProductRepository productRepository;
+
+    @Autowired
+    public void setProductRepository(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     @PostConstruct
     public void init() {
